@@ -1,1 +1,30 @@
-
+.logo {
+  width: auto;
+  height: 80px;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.logo {
+  padding-right: 750px;
+}
+.a,
+.b,
+.c {
+  padding-right: 60px;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+}
+.filtre {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 30px;
+}
+.e,
+.f,
+.g {
+  padding-left: 20px;
+}
