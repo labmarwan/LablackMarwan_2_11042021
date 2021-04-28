@@ -28,6 +28,9 @@ nav {
 .c {
   padding-right: 60px;
 }
+h1 {
+  padding-top: 20px;
+}
 
 /* Moteur de recherche */
 
@@ -46,167 +49,94 @@ nav {
   display: flex;
   justify-content: space-between;
   margin-right: 500px;
-  padding-top: 10px;
+  padding-top: 20px;
+  align-items: center;
 }
 
 button {
   border-radius: 20px;
   padding: 12px;
 }
+.infos {
+  padding-top: 20px;
+}
 
 /* hébergement marseille */
 .room {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
 }
 .hébergementmarseille {
-  border: 2px solid red;
   background-color: #f2f2f2;
   border-radius: 10px;
 }
 .blockA {
   display: flex;
   flex-wrap: wrap;
-  margin: -10px;
-  padding-top: 10px;
-  height: 400px;
-  width: 870px;
+  flex: 70%;
 }
 .blockA > * {
-  flex: 1 1 200px;
+  flex: 1 1 23.3%;
   margin: 10px;
 }
 
-.block1 {
-  border: 2px solid green;
+.block {
+  border: 2px solid white;
   height: 170px;
-  width: 100px;
+  flex: 23.3%;
   background-color: green;
   border-radius: 10px;
 }
-.block2 {
-  border: 2px solid red;
-  height: 170px;
-  width: 100px;
-  background-color: red;
-  border-radius: 10px;
-}
-.block3 {
-  border: 2px solid yellow;
-  height: 170px;
-  width: 100px;
-  background-color: yellow;
-  border-radius: 10px;
-}
-.block4 {
-  border: 2px solid blue;
-  height: 170px;
-  width: 100px;
-  background-color: blue;
-  border-radius: 10px;
-}
-.block5 {
-  border: 2px solid pink;
-  height: 170px;
-  width: 100px;
-  background-color: pink;
-  border-radius: 10px;
-}
-.block6 {
-  border: 2px solid brown;
-  height: 170px;
-  width: 100px;
-  background-color: brown;
-  border-radius: 10px;
+.auberge {
+  height: 100px;
 }
 /* les plus populaire */
 .populaire {
-  border: 2px solid red;
   background-color: #f2f2f2;
-  margin-right: 20px;
   border-radius: 10px;
 }
 .blockB {
   height: 250px;
-  width: 500px;
+  flex: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.block7 {
+.block1 {
   border: 2px solid red;
-  height: 80px;
-  width: 100px;
+  height: 120px;
+  flex: 33.3%;
   background-color: red;
-  border-radius: 10px;
-}
-.block8 {
-  border: 2px solid brown;
-  height: 80px;
-  width: 100px;
-  background-color: brown;
-  border-radius: 10px;
-}
-.block9 {
-  border: 2px solid yellow;
-  height: 80px;
-  width: 100px;
-  background-color: yellow;
   border-radius: 10px;
 }
 
 /* activité des hebergements */
 .activité {
-  border: 2px solid red;
-  margin-right: 20px;
   border-radius: 10px;
+  padding-top: 100px;
+  background-color: grey;
 }
 .blockC {
   display: flex;
   justify-content: space-around;
+  flex: 100%;
+  padding-top: 20px;
 }
-.block10 {
+.block2 {
   border: 2px solid red;
-  height: 80px;
-  width: 100px;
+  height: 160px;
+  flex: 25%;
   background-color: red;
   border-radius: 10px;
 }
-.block11 {
+.block3 {
   border: 2px solid brown;
   height: 80px;
-  width: 100px;
+  flex: 25%;
   background-color: brown;
-  border-radius: 10px;
-}
-.block12 {
-  border: 2px solid yellow;
-  height: 80px;
-  width: 100px;
-  background-color: yellow;
-  border-radius: 10px;
-}
-.block13 {
-  border: 2px solid green;
-  height: 80px;
-  width: 100px;
-  background-color: green;
-  border-radius: 10px;
-}
-.block14 {
-  border: 2px solid blue;
-  height: 80px;
-  width: 100px;
-  background-color: blue;
-  border-radius: 10px;
-}
-.block15 {
-  border: 2px solid pink;
-  height: 80px;
-  width: 100px;
-  background-color: pink;
   border-radius: 10px;
 }
 /* footer */
@@ -215,6 +145,7 @@ footer {
   justify-content: space-between;
   align-items: flex-end;
   border-top: 2px solid gray;
+  padding-top: 20px;
 }
 
 .propos,
