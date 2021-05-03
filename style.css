@@ -68,6 +68,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  margin-right: 40%;
   align-items: center;
 }
 .filtre i {
