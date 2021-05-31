@@ -1,4 +1,12 @@
-* {
+html,
+h1,
+h2,
+h3,
+body,
+div,
+img,
+a,
+p {
   margin: 0;
   padding: 0;
 }
@@ -11,28 +19,41 @@ a {
   text-decoration: none;
   color: black;
 }
-/* Heeder */
+
+/* Header */
 .logo {
-  width: auto;
-  height: 50px;
-  padding-right: 900px;
+  flex-grow: 1;
 }
 nav {
   display: flex;
   justify-content: flex-end;
-  padding-top: 10px;
+  font-weight: bold;
+}
+.navigation a:hover {
+  color: #0164fc;
+  border-top: solid 2px #0164fc;
+  padding-top: 15px;
+}
+.navigation a {
+  border-top: solid 2px transparent;
+  padding-top: 15px;
 }
 
-.h,
-.b,
-.c {
+.hebergement,
+.activite,
+.inscrire {
   padding-right: 60px;
 }
-h1 {
-  padding-top: 20px;
+
+p {
+  font-weight: bold;
 }
 
 /* Moteur de recherche */
+
+.soustitre {
+  padding-top: 10px;
+}
 
 .search-title {
   display: flex;
@@ -41,50 +62,78 @@ h1 {
 .search-moteur {
   display: flex;
   margin-top: 20px;
+  align-items: center;
 }
 .search-moteur i {
-  padding: 10px;
+  padding: 17px;
   border-radius: 10px 0 0 10px;
   background-color: #f2f2f2;
-  text-align: center;
-  border: solid 1px black;
+  color: black;
 }
 
 .recherche {
   height: 50px;
-  width: 300px;
+  border: solid 1px #f2f2f2;
+  outline: none;
+  font-size: 110%;
+  text-align: center;
 }
+
 .search-button {
   border-radius: 0 15px 15px 0;
   background-color: blue;
   color: white;
   cursor: pointer;
   text-align: center;
-  padding: 5px;
+  padding: 17px;
   width: 120px;
+  border: blue;
+}
+.fas {
+  color: #0164fc;
+}
+.far {
+  color: gray;
 }
 
 .filtre {
   display: flex;
-  justify-content: space-between;
   margin-top: 20px;
-  margin-right: 40%;
   align-items: center;
 }
 .filtre i {
   border-radius: 50%;
   padding: 20px;
+
   background-color: #deebff;
 }
 
 button {
   border-radius: 40px;
-  padding-right: 10px;
   background-color: white;
   border: solid 2px #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 15px;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.f {
+  margin-right: 40px;
+  font-weight: bold;
 }
 .infos {
+  display: flex;
   padding-top: 20px;
+  align-items: center;
+}
+.fa-info {
+  border: solid 1px #f2f2f2;
+  border-radius: 300px;
+  padding: 10px;
 }
 
 /* hébergement marseille */
@@ -94,7 +143,7 @@ button {
   padding-top: 20px;
   margin-right: 10px;
 }
-.hébergementmarseille {
+.hebergementmarseille {
   background-color: #f2f2f2;
   border-radius: 10px;
   flex: 70%;
@@ -105,22 +154,24 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
-.blockA > * {
-  flex: 1 1 23.3%;
-  margin: 10px;
-}
 
 .block {
-  border: 2px solid white;
+  box-shadow: 0 0 20px #0000002e;
+  border: solid 5px white;
   height: 170px;
-  flex: 23.3%;
-  border-radius: 10px;
+  border-radius: 20px;
+  background-color: white;
+  flex: 23%;
+  margin: 10px;
 }
 .auberge {
   object-fit: cover;
   height: 100px;
   width: 100%;
   border-radius: 10px;
+}
+.afficher {
+  padding: 10px;
 }
 /* les plus populaire */
 .populaire {
@@ -129,9 +180,14 @@ button {
   flex: 30%;
   padding: 30px;
 }
+.text {
+  display: flex;
+  justify-content: space-between;
+}
+.text i {
+  color: black;
+}
 .blockB {
-  height: 100px;
-  margin-top: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,9 +195,9 @@ button {
 }
 
 .block1 {
+  box-shadow: 0 0 20px #0000002e;
   display: flex;
   height: 90px;
-  flex: 33.3%;
   border-radius: 10px;
   margin: 10px;
   border: solid 2px white;
@@ -167,33 +223,36 @@ button {
 .blockC {
   display: flex;
   justify-content: space-around;
-  flex: 100%;
   padding-top: 20px;
 }
 .block2 {
-  border: solid 2px black;
-  height: 225px;
-  flex: 60%;
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 60%;
+  height: 500px;
   border-radius: 10px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-right: 50px;
+  margin-top: 50px;
+  font-weight: bold;
 }
 .block3 {
-  border: solid 2px black;
-  height: 110px;
-  flex: 10%;
+  border: solid 2px #f2f2f2;
+  box-shadow: 0 0 20px #0000002e;
+  height: 220px;
   border-radius: 10px;
+  margin-right: 50px;
+  margin-top: 50px;
+  font-weight: bold;
 }
 
 .auberge2 {
   object-fit: cover;
-  height: 185px;
+  height: 450px;
   width: 100%;
   border-radius: 10px;
 }
 .auberge3 {
   object-fit: cover;
-  height: 80px;
+  height: 175px;
   width: 100%;
   border-radius: 10px;
 }
@@ -201,20 +260,81 @@ button {
 /* footer */
 footer {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  border-top: solid 1px gray;
+  border-top: solid 1px #f2f2f2;
   background-color: #f2f2f2;
   padding: 30px;
   margin-top: 60px;
 }
 
-.propos,
-.noshebergement,
-.assistance {
-  padding-right: 200px;
+.liens {
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
 }
 
-/* responsive */
+.propos,
+.noshebergement,
+.assistance {
+  padding-right: 20%;
+}
+
+/* 
+responsive 
+*/
+
+/* 
+les plus populaire au dessus d'hebergement a l'horizontale 
+*/
+
+@media (max-width: 1024px) {
+  .block {
+    flex: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .propos,
+  .noshebergement,
+  .assistance {
+    padding-right: unset;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .blockC {
+    flex-direction: column;
+  }
+  .filtre {
+    flex-wrap: wrap;
+  }
+  .room {
+    flex-direction: column-reverse;
+  }
+  .block {
+    flex: 100%;
+  }
+  nav {
+    flex-wrap: wrap-reverse;
+  }
+  .hebergementmarseille {
+    margin-right: unset;
+    margin-top: 30px;
+  }
+  .block2 {
+    height: 220px;
+  }
+  .auberge2 {
+    height: 175px;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+}
+/*
+ * les ecrans 4K
+ */
+@media (min-width: 2000px) {
+  .wrapper {
+    max-width: 2000px;
+  }
+}
