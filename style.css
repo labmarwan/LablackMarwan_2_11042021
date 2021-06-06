@@ -12,12 +12,15 @@ p {
 }
 
 body {
-  font-family: "Raleway";
-  margin: 10px;
+  font-family: "Raleway", "sans serif";
 }
 a {
   text-decoration: none;
   color: black;
+}
+.site {
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 /* Header */
@@ -27,7 +30,6 @@ a {
 nav {
   display: flex;
   justify-content: flex-end;
-  font-weight: bold;
 }
 .navigation a:hover {
   color: #0164fc;
@@ -42,10 +44,16 @@ nav {
 .hebergement,
 .activite,
 .inscrire {
-  padding-right: 60px;
+  margin-right: 30px;
+  font-size: 15px;
+}
+.inscrire {
+  color: #0164fc;
 }
 
-p {
+h2 {
+  margin-top: 15px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -65,14 +73,14 @@ p {
   align-items: center;
 }
 .search-moteur i {
-  padding: 17px;
+  padding: 12px;
   border-radius: 10px 0 0 10px;
   background-color: #f2f2f2;
   color: black;
 }
 
 .recherche {
-  height: 50px;
+  height: 40px;
   border: solid 1px #f2f2f2;
   outline: none;
   font-size: 110%;
@@ -80,13 +88,13 @@ p {
 }
 
 .search-button {
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 13px 13px 0;
   background-color: blue;
   color: white;
   cursor: pointer;
   text-align: center;
-  padding: 17px;
-  width: 120px;
+  padding: 12px;
+  width: 90px;
   border: blue;
 }
 .fas {
@@ -101,14 +109,15 @@ p {
   margin-top: 20px;
   align-items: center;
 }
+
 .filtre i {
   border-radius: 50%;
-  padding: 20px;
-
+  padding: 15px;
   background-color: #deebff;
 }
 
-button {
+.economique,
+.romantique {
   border-radius: 40px;
   background-color: white;
   border: solid 2px #f2f2f2;
@@ -116,9 +125,44 @@ button {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-right: 15px;
-  cursor: pointer;
-  transition-duration: 1s;
+  margin-right: 20px;
+  width: 150px;
+}
+.billet,
+.coeur {
+  margin-left: -35px;
+  margin-right: 10px;
+}
+
+.familial {
+  width: 120px;
+  border-radius: 40px;
+  background-color: white;
+  border: solid 2px #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 20px;
+}
+.perso {
+  margin-left: -30px;
+  margin-right: 10px;
+}
+.animaux {
+  border-radius: 40px;
+  background-color: white;
+  border: solid 2px #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 180px;
+}
+
+.chien {
+  margin-left: -30px;
+  margin-right: 10px;
 }
 
 .f {
@@ -131,12 +175,18 @@ button {
   align-items: center;
 }
 .fa-info {
-  border: solid 1px #f2f2f2;
-  border-radius: 300px;
+  border: solid 2px #f2f2f2;
+  border-radius: 100%;
   padding: 10px;
+  margin-right: 10px;
 }
 
 /* hébergement marseille */
+
+.marseille {
+  padding: 15px;
+  margin-top: -10px;
+}
 .room {
   display: flex;
   justify-content: space-between;
@@ -145,9 +195,9 @@ button {
 }
 .hebergementmarseille {
   background-color: #f2f2f2;
-  border-radius: 10px;
+  border-radius: 20px;
   flex: 70%;
-  margin-right: 80px;
+  margin-right: 30px;
   padding: 20px;
 }
 .blockA {
@@ -158,31 +208,43 @@ button {
 .block {
   box-shadow: 0 0 20px #0000002e;
   border: solid 5px white;
-  height: 170px;
+  height: 180px;
   border-radius: 20px;
   background-color: white;
   flex: 23%;
   margin: 10px;
+  cursor: pointer;
+}
+.star {
+  display: flex;
+}
+.starempty i {
+  color: rgb(236, 226, 226);
+}
+.starfull {
+  margin-right: 5px;
 }
 .auberge {
   object-fit: cover;
   height: 100px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 15px 15px 0px 0px;
 }
 .afficher {
   padding: 10px;
+  font-weight: bold;
 }
 /* les plus populaire */
 .populaire {
   background-color: #f2f2f2;
-  border-radius: 10px;
+  border-radius: 20px;
   flex: 30%;
   padding: 30px;
 }
 .text {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .text i {
   color: black;
@@ -192,15 +254,17 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 30px;
 }
 
 .block1 {
   box-shadow: 0 0 20px #0000002e;
+  border: solid 5px white;
   display: flex;
-  height: 90px;
-  border-radius: 10px;
+  height: 120px;
+  border-radius: 20px;
   margin: 10px;
-  border: solid 2px white;
+  cursor: pointer;
 }
 .nuit {
   display: flex;
@@ -213,7 +277,7 @@ button {
   object-fit: cover;
   height: 100%;
   width: 30%;
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
 }
 /* activité des hebergements */
 .activité {
@@ -333,8 +397,8 @@ les plus populaire au dessus d'hebergement a l'horizontale
 /*
  * les ecrans 4K
  */
-@media (min-width: 2000px) {
+@media (min-width: 1920px) {
   .wrapper {
-    max-width: 2000px;
+    max-width: 1920px;
   }
 }
